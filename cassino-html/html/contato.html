@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-language" content="pt-br">
+    <meta name="author" content="Jonatha Maicon">
+    <meta name="keywords" content="cassino, formulário, avaliação, html">
+    <meta name="description" content="Formulário de avaliação do projeto Universo dos Cassinos.">
+    <title>Avaliação do Projeto</title>
+</head>
+<body>
+    <header>
+        <h1>Avaliação do Projeto</h1>
+        
+<nav>
+    <a href="index.html">Início</a> |
+    <a href="jogos.html">Jogos</a> |
+    <a href="probabilidades.html">Probabilidades</a> |
+    <a href="multimidia.html">Multimídia</a> |
+    <a href="contato.html">Contato</a>
+</nav>
+
+    </header>
+
+    <main>
+        <section>
+            <h2>Envie sua avaliação</h2>
+
+            <article>
+                <h3>Formulário</h3>
+
+                <form>
+                    <fieldset>
+                        <legend>Informações do visitante</legend>
+
+                        <p>
+                            <label for="nome">Nome:</label>
+                            <input type="text" id="nome" name="nome"
+                                   placeholder="Digite seu nome completo" required>
+                        </p>
+
+                        <p>
+                            <label for="email">E-mail:</label>
+                            <input type="email" id="email" name="email"
+                                   placeholder="exemplo@email.com" required>
+                        </p>
+
+                        <p>
+                            <label for="data">Data da visita:</label>
+                            <input type="date" id="data" name="data" required>
+                        </p>
+
+                        <p>
+                            <label for="arquivo">Enviar arquivo:</label>
+                            <input type="file" id="arquivo" name="arquivo">
+                        </p>
+
+                        <p>
+                            <label for="jogo">Jogo que mais chamou sua atenção:</label>
+                            <input type="text" id="jogo" name="jogo" list="jogos"
+                                   placeholder="Digite ou escolha um jogo" required>
+
+                            <datalist id="jogos">
+                                <option value="Roleta">
+                                <option value="Blackjack">
+                                <option value="Poker">
+                            </datalist>
+                        </p>
+
+                        <p>
+                            <label for="avaliacao">Nota para o projeto:</label>
+                            <input type="range" id="avaliacao" name="avaliacao"
+                                   min="0" max="10">
+                        </p>
+
+                        <p>
+                            <button type="submit">Enviar</button>
+                            <button type="reset">Limpar</button>
+                        </p>
+                    </fieldset>
+                </form>
+
+                <!-- Tive dificuldade para organizar corretamente os caminhos dos
+                     arquivos de imagem e áudio entre as pastas do projeto. -->
+            </article>
+
+            <aside>
+                <h3>Observação</h3>
+                <p>
+                    Este formulário é apenas demonstrativo e não envia dados para um servidor.
+                </p>
+            </aside>
+        </section>
+    </main>
+
+    <footer>
+        <p>Universo dos Cassinos — Contato — 2026.</p>
+    </footer>
+</body>
+</html>
